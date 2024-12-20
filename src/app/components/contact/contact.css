@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&family=Tilt+Neon&display=swap');
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: azure;
+    padding: 5% 10.6%;
+}
+
+.contact_title{
+    justify-content: center;
+    position: relative;
+}
+
+.contact_title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600; /* Ensure h1 is positioned relative to the container */
+    z-index: 2; /* Ensure text is above the image */
+    margin: 0; 
+    position: relative;
+    background:none;
+}
+
+.contact_title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* Ensure image is behind the text */ /* Maintain image aspect ratio */ /* Ensure image does not overflow the container */
+}
+
+.contactsection{
+    display: flex;
+    gap: 4vw;
+    font-family: "Tilt Neon", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+}
+
+.leftcontainer{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftcontainer h2{
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+      font-size: 4rem;
+    background-image:linear-gradient(276deg ,#DA7C25 0%,#B923E1 120.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leftcontainer p{
+    max-width: 550px;
+    font-size: 20px;
+}
+
+.contactdetails{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 22px;
+}
+
+.contactdetail{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightcontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.rightcontainer label{
+    color:#D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.rightcontainer input{
+    border: none;
+    border-radius: 4px;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    background-color: #38383c;
+    color:#A0A0A0;
+    font-size: 22px;
+    font-family: Outfit;
+}
+
+.rightcontainer textarea{
+    border: none;
+    border-radius: 4px;
+    width: 650px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #38383c;
+    color:#A0A0A0;
+    font-size: 22px;
+    font-family: Outfit;
+}
+
+.contactsubmit{
+    padding:20px 40px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#DA7C25 -5%,#B923E1 106%);
+    cursor: pointer;
+    font-size:22px;
+}
+.contactsubmit:hover{
+    border: 1px solid white;
+}
+ .Icon{
+    border: 1.5px solid #D8D8D8;
+ 
+ }
+
+ @media (max-width: 820px) {
+    .contactsection{
+        flex-direction: column;
+        gap:10vh;
+        
+    }
+    .rightcontainer {
+        align-items: center;
+        justify-content: center;
+    }
+    .rightcontainer input{
+        width: 100%;
+    }
+    
+    .rightcontainer textarea{
+        width: 100%;
+    }
+}

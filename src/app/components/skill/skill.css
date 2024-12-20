@@ -1,0 +1,68 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 170px;
+    color: azure;
+}
+
+.skill_title{
+    justify-content: center;
+    position: relative;
+}
+
+.skill_title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600; /* Ensure h1 is positioned relative to the container */
+    z-index: 2; /* Ensure text is above the image */
+    margin: 0; 
+    position: relative;
+    background:none;
+}
+
+.skill_title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* Ensure image is behind the text */ /* Maintain image aspect ratio */ /* Ensure image does not overflow the container */
+}
+
+.skillsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+
+}
+.skillgroup{
+    background-color: rgba(255, 255, 255,0.2);
+    border-radius: 25px;
+    padding: 2% 10% 2% 0%;
+    display: flex;
+    flex-direction: column;
+}
+.skillgroup h1{
+    font-size: 30px;
+    font-weight: 600;
+    top: 0%;
+    text-align: center;
+    background:none;
+}
+.skillcontainer{
+    background:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10% 5% ;
+    gap:20px;
+}
+.skillcontainer li{
+    background:none;
+    list-style: none;
+    font-size: 22px;
+    padding: 10% 5% 10% 10% ;
+    border: 1px solid orange;
+    background-color: black;
+}

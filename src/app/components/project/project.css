@@ -1,0 +1,86 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: azure;
+    padding: 6vh 0;
+}
+
+.project_title{
+    justify-content: center;
+    position: relative;
+}
+
+.project_title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600; /* Ensure h1 is positioned relative to the container */
+    z-index: 2; /* Ensure text is above the image */
+    margin: 0; 
+    position: relative;
+    background:none;
+}
+
+.project_title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* Ensure image is behind the text */ /* Maintain image aspect ratio */ /* Ensure image does not overflow the container */
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.project-container img {
+    box-sizing: border-box;
+    width: 419px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.project-container img:hover {
+    transform: scale(1.1);
+}
+
+.showmore{
+    display: flex;
+    gap:15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.showmore:hover{
+    gap: 30px;
+    transition: 0.2s ease-in;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .project-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 960px)
+{
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+    .project-container img {
+        width: 100%;
+        gap:3%;
+    }
+}
