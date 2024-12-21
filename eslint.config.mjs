@@ -11,6 +11,16 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    parserOptions: {
+      project: "./tsconfig.json", // Ensure TypeScript is properly parsed
+    },
+    rules: {
+      "no-console": "warn", // Custom rule to warn about console usage
+      "react/prop-types": "off", // Disable prop-types rule if using TypeScript
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // Ignore unused variables with _ prefix
+    },
+  },
 ];
 
 export default eslintConfig;
