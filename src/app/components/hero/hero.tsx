@@ -2,9 +2,7 @@ import React from "react";
 import './hero.css';
 import Link from 'next/link';
 
-type HeroProps = {};
-
-const Hero: React.FC<HeroProps> = () => {
+function Hero() {
     return (
         <div className="hero" id="home">
             <div className="herotext">
