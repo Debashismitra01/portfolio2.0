@@ -9,7 +9,7 @@ const Hero: React.FC<HeroProps> = () => {
         <div className="hero" id="home">
             <div className="herotext">
                 <h1>Hi, there</h1>
-                <h2>I'm <span>Debashis Mitra</span></h2>
+                <h2>I am <span>Debashis Mitra</span></h2>
                 <div className="hero-action">
                     <div className="hero-connect">
                         <Link href="#contact" >Connect with me
